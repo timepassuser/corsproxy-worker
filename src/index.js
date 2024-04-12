@@ -40,7 +40,7 @@ export default {
             if (urltofetch.includes("https://") && urltofetch.includes("cdn3.digialm.com") && urltofetch.includes(".html")) {
                 try {
                     var response = await fetch(urltofetch, {
-                        signal: AbortSignal.timeout(2000)
+                        signal: AbortSignal.timeout(3000)
                     });
                     response = new Response(response.body, response);
                 } catch (error) {
