@@ -1,6 +1,6 @@
 export default {
     async fetch(request, env, ctx) {
-        console.log(request);
+        console.log(request.headers);
         const corsHeaders = {
             "Access-Control-Allow-Origin": "*",
             "Access-Control-Allow-Methods": "GET,OPTIONS",
