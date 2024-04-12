@@ -2,7 +2,7 @@ export default {
     async fetch(request, env, ctx) {
         console.log(request.headers);
         const corsHeaders = {
-            "Access-Control-Allow-Origin": "https://timepassuser.github.io/",
+            "Access-Control-Allow-Origin": "https://timepassuser.github.io",
             "Access-Control-Allow-Methods": "GET,OPTIONS",
             "Access-Control-Allow-Headers": "corsproxy,urltofetch"
         };
